@@ -18,15 +18,20 @@ scripts/publicar.mjs       ← publica o post do dia via API oficial do Instagra
 
 ## Ativar a publicação automática (uma vez só)
 
-### 1. Conta e token do Instagram
-1. O @ddoublesoftware precisa ser conta **profissional** (Empresa ou Criador): Instagram → Configurações → Tipo de conta.
-2. Em [developers.facebook.com](https://developers.facebook.com/apps) crie um app do tipo **Empresa** e adicione o produto **Instagram** → "API com login do Instagram".
-3. Em *Gerar tokens de acesso*, conecte o @ddoublesoftware e conceda `instagram_business_basic` e `instagram_business_content_publish`.
-4. Anote o **ID da conta do Instagram** e o **token** (o token gerado ali já é de longa duração, 60 dias).
+### 1. Token do Instagram (usuário do sistema, não expira)
+Apps criados a partir de out/2026 usam o "login unificado" da Meta; o caminho mais simples é um **usuário do sistema** no portfólio empresarial.
 
-> Token de 60 dias: renove antes de vencer com
-> `curl "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=TOKEN_ATUAL"`
-> e atualize o secret. Para não ter vencimento, use o login do Facebook com um *usuário do sistema* do Gerenciador de Negócios e defina a variável `IG_API_HOST=graph.facebook.com`.
+1. O @ddoublesoftware precisa ser conta **profissional** (Instagram → Configurações → Tipo de conta).
+2. Em [business.facebook.com/settings](https://business.facebook.com/settings) (entre com o seu Facebook), crie ou abra o portfólio da Double.
+3. **Contas → Contas do Instagram → Adicionar**: conecte o @ddoublesoftware (login do Instagram).
+4. **Contas → Apps**: confira se o app criado em developers.facebook.com aparece; se não, adicione pelo ID do app.
+5. **Usuários → Usuários do sistema → Adicionar**: nome `double-bot`, função Administrador.
+6. Nesse usuário, **Atribuir ativos**: a conta do Instagram (controle total) e o app.
+7. **Gerar token**: escolha o app, validade **Nunca**, permissões `instagram_basic`, `instagram_content_publish` e `business_management`. Copie o token.
+
+O ID da conta é descoberto automaticamente pelo script; não precisa cadastrar `IG_USER_ID`.
+
+> Apps antigos com "API com login do Instagram": use o token de lá, cadastre também `IG_USER_ID` e crie a variável do repositório `IG_API_HOST=graph.instagram.com` (esse token vence em 60 dias).
 
 ### 2. Repositório no GitHub
 O Instagram baixa a imagem por um link público, então o repositório precisa ser **público** (as artes ficam visíveis, o que não é problema: elas vão para o Instagram de qualquer forma). Tokens ficam em *secrets*, nunca no código.
@@ -35,12 +40,11 @@ O Instagram baixa a imagem por um link público, então o repositório precisa s
 cd double-instagram
 git init && git add . && git commit -m "Calendário de posts Double"
 gh repo create double-instagram --public --source . --push
-gh secret set IG_USER_ID
 gh secret set IG_ACCESS_TOKEN
 ```
 
 ### 3. Testar
-No GitHub: **Actions → Post diário Instagram → Run workflow**, marque *Só simular*. Se a legenda e o link da imagem aparecerem no log, está pronto. Depois disso, o post de cada dia sai sozinho às 12h e fica registrado em `saida/publicados.json`.
+No GitHub: **Actions → Post diário Instagram → Run workflow**, marque *Só simular*. Com o token cadastrado, o log mostra `token OK para @ddoublesoftware` sem publicar nada. Depois disso, o post de cada dia sai sozinho às 12h e fica registrado em `saida/publicados.json`.
 
 Observações
 - O GitHub inicia o agendamento às 11:50 e o script aguarda até 12:00. Em dias de fila alta no GitHub pode atrasar alguns minutos.

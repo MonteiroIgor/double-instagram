@@ -1,10 +1,11 @@
 // Publica no Instagram o post do dia (horário de Brasília) usando a API oficial da Meta.
 //
 // Variáveis de ambiente:
-//   IG_USER_ID        ID da conta profissional do Instagram (obrigatório)
 //   IG_ACCESS_TOKEN   token com permissão de publicação (obrigatório, nunca commitar)
+//   IG_USER_ID        ID da conta do Instagram (opcional: se faltar, é descoberto pelo token)
+//   IG_USERNAME       conta a usar na descoberta automática (padrão ddoublesoftware)
 //   IMAGE_BASE_URL    URL pública da pasta saida/jpg (ex.: https://raw.githubusercontent.com/<usuario>/<repo>/main/saida/jpg)
-//   IG_API_HOST       graph.instagram.com (login do Instagram, padrão) ou graph.facebook.com (login do Facebook)
+//   IG_API_HOST       graph.facebook.com (login unificado / usuário do sistema, padrão) ou graph.instagram.com (apps antigos)
 //   IG_API_VERSION    padrão v24.0
 //   WAIT_UNTIL        "12:00" -> se rodar alguns minutos antes, espera até 12h de Brasília
 //   DRY_RUN=1         mostra o que faria, sem publicar
@@ -21,7 +22,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const TZ = "America/Sao_Paulo";
 const env = process.env;
 const DRY = env.DRY_RUN === "1";
-const HOST = env.IG_API_HOST || "graph.instagram.com";
+const HOST = env.IG_API_HOST || "graph.facebook.com";
 const VER = env.IG_API_VERSION || "v24.0";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -63,8 +64,23 @@ const imageUrl = `${(env.IMAGE_BASE_URL || "").replace(/\/$/, "")}/${nome}`;
 const caption = legendaCompleta(post);
 
 console.log(`Post ${post.id} (${post.data}) · ${post.servico}\nImagem: ${imageUrl}\n---\n${caption}\n---`);
-if (DRY) { console.log("DRY_RUN=1: nada foi publicado."); process.exit(0); }
-for (const k of ["IG_USER_ID", "IG_ACCESS_TOKEN", "IMAGE_BASE_URL"]) if (!env[k]) throw new Error(`Defina ${k}.`);
+if (DRY && !env.IG_ACCESS_TOKEN) { console.log("DRY_RUN=1 sem token: nada foi publicado."); process.exit(0); }
+for (const k of ["IG_ACCESS_TOKEN", "IMAGE_BASE_URL"]) if (!env[k]) throw new Error(`Defina ${k}.`);
+
+// Sem IG_USER_ID: descobre o ID da conta pelo token (token de usuário do sistema / login unificado).
+if (!env.IG_USER_ID) {
+  const usuario = (env.IG_USERNAME || "ddoublesoftware").toLowerCase();
+  const { data = [] } = await api("GET", "me/assigned_instagram_accounts", { fields: "id,username" });
+  const conta = data.find((c) => (c.username || "").toLowerCase() === usuario) || (data.length === 1 ? data[0] : null);
+  if (!conta) throw new Error(`Conta @${usuario} não encontrada no token. Contas vistas: ${data.map((c) => "@" + c.username).join(", ") || "nenhuma"}.`);
+  env.IG_USER_ID = conta.id;
+  console.log(`Conta: @${conta.username} (ID ${conta.id})`);
+}
+if (DRY) {
+  const conta = await api("GET", env.IG_USER_ID, { fields: "username" });
+  console.log(`DRY_RUN=1: token OK para @${conta.username}. Nada foi publicado.`);
+  process.exit(0);
+}
 
 // Se o agendador rodou um pouco antes, espera dar 12h em Brasília (no máximo 30 min).
 if (env.WAIT_UNTIL && !alvoId && !arg("--data")) {
