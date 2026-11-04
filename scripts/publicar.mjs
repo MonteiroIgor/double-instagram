@@ -78,7 +78,10 @@ if (!env.IG_USER_ID) {
 }
 if (DRY) {
   const conta = await api("GET", env.IG_USER_ID, { fields: "username" });
-  console.log(`DRY_RUN=1: token OK para @${conta.username}. Nada foi publicado.`);
+  console.log(`DRY_RUN=1: token OK para @${conta.username}.`);
+  // Só responde se o token tiver permissão de publicação.
+  const { data: [cota] = [] } = await api("GET", `${env.IG_USER_ID}/content_publishing_limit`, { fields: "quota_usage,config" });
+  console.log(`Permissão de publicação OK (usados ${cota?.quota_usage ?? 0} de ${cota?.config?.quota_total ?? "?"} posts nas últimas 24h). Nada foi publicado.`);
   process.exit(0);
 }
 
