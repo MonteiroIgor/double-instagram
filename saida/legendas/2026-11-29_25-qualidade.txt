@@ -1,0 +1,12 @@
+Qualidade não acontece por acaso. Ela é construída em camadas. 🧱
+
+✅ Testes automatizados pegam regressões em minutos
+👀 Revisão de código evita problemas antes de existirem
+⚡ Testes de performance garantem que a Black Friday não derrube o sistema
+📡 Monitoramento avisa o time antes do cliente reclamar
+
+Tudo isso pode ser aplicado a um projeto novo ou ao software que sua empresa já usa.
+
+📌 Salva como checklist para o seu próximo projeto.
+
+#DoubleSoftware #tecnologia #transformacaodigital #qualidadedesoftware #QA #testesautomatizados #devops

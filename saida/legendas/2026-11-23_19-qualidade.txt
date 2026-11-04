@@ -1,0 +1,11 @@
+O cliente não vê seu código. Ele vê se o botão funciona, se a página carrega e se o pagamento passa. 💳
+
+Cada falha em produção custa venda, suporte e reputação. Cada entrega estável constrói confiança.
+
+Qualidade de software é isso: garantir que o que funciona hoje continue funcionando amanhã, mesmo depois de dez novas versões.
+
+✅ Na Double, qualidade faz parte de todo projeto e também pode ser contratada para o software que você já tem.
+
+👉 Link na bio.
+
+#DoubleSoftware #tecnologia #transformacaodigital #qualidadedesoftware #QA #testesautomatizados #devops

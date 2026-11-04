@@ -1,0 +1,56 @@
+name: Post diário Instagram (12h Brasília)
+
+on:
+  schedule:
+    # 14:50 UTC = 11:50 em Brasília (UTC-3). O script espera até 12:00 em ponto.
+    - cron: "50 14 * * *"
+  workflow_dispatch:
+    inputs:
+      data:
+        description: "Publicar o post de uma data específica (AAAA-MM-DD). Vazio = hoje."
+        required: false
+      dry_run:
+        description: "Só simular (não publica)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-diario
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Publicar post do dia
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.instagram.com' }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION || 'v24.0' }}
+          IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/saida/jpg
+          WAIT_UNTIL: "12:00"
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+        run: |
+          if [ -n "${{ inputs.data }}" ]; then
+            node scripts/publicar.mjs --data "${{ inputs.data }}"
+          else
+            node scripts/publicar.mjs
+          fi
+      - name: Registrar publicação
+        run: |
+          if [ -n "$(git status --porcelain saida/publicados.json)" ]; then
+            git config user.name "double-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add saida/publicados.json
+            git commit -m "Registro de publicação $(TZ=America/Sao_Paulo date +%F)"
+            git push
+          fi

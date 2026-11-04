@@ -1,0 +1,13 @@
+"Pode subir, testei aqui e funcionou." 😅
+
+Essa frase já derrubou muito sistema em produção.
+
+Com uma esteira de qualidade, cada alteração passa automaticamente por testes antes de chegar ao cliente. Se algo quebrar, quem descobre é o pipeline, não o usuário.
+
+Na Double a gente implanta testes automatizados, revisão de código e monitoramento no seu projeto, novo ou legado.
+
+✅ Publicar uma nova versão deveria ser rotina, não evento de risco.
+
+📩 Fala com a gente pelo link da bio.
+
+#DoubleSoftware #tecnologia #transformacaodigital #qualidadedesoftware #QA #testesautomatizados #devops
