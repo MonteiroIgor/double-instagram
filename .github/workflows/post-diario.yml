@@ -4,6 +4,13 @@ on:
   schedule:
     # 14:50 UTC = 11:50 em Brasília (UTC-3). O script espera até 12:00 em ponto.
     - cron: "50 14 * * *"
+    # Reservas: o agendador do GitHub pode atrasar ou pular execuções.
+    # Se o post do dia já saiu, estas rodadas não fazem nada (publicados.json + trava no Instagram).
+    - cron: "17 15 * * *"   # 12:17
+    - cron: "43 15 * * *"   # 12:43
+    - cron: "23 16 * * *"   # 13:23
+    - cron: "37 17 * * *"   # 14:37
+    - cron: "07 20 * * *"   # 17:07
   workflow_dispatch:
     inputs:
       data:

@@ -47,6 +47,6 @@ gh secret set IG_ACCESS_TOKEN
 No GitHub: **Actions → Post diário Instagram → Run workflow**, marque *Só simular*. Com o token cadastrado, o log mostra `token OK para @ddoublesoftware` sem publicar nada. Depois disso, o post de cada dia sai sozinho às 12h e fica registrado em `saida/publicados.json`.
 
 Observações
-- O GitHub inicia o agendamento às 11:50 e o script aguarda até 12:00. Em dias de fila alta no GitHub pode atrasar alguns minutos.
+- O GitHub inicia o agendamento às 11:50 e o script aguarda até 12:00. Como o agendador do GitHub às vezes atrasa ou pula execuções, há rodadas de reserva às 12:17, 12:43, 13:23, 14:37 e 17:07: se o post do dia já saiu, elas não fazem nada.
 - Se um dia não tiver post no calendário, nada é publicado.
 - Versão da API: padrão `v24.0`; para trocar, crie a variável do repositório `IG_API_VERSION`.
