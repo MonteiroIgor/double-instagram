@@ -27,6 +27,8 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}  # versão mais recente, com o registro de publicados atualizado
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -53,5 +55,6 @@ jobs:
             git config user.email "actions@users.noreply.github.com"
             git add saida/publicados.json
             git commit -m "Registro de publicação $(TZ=America/Sao_Paulo date +%F)"
+            git pull --rebase
             git push
           fi

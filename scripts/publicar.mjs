@@ -92,6 +92,19 @@ if (env.WAIT_UNTIL && !alvoId && !arg("--data")) {
   if (falta > 0 && falta <= 30) { console.log(`Aguardando ${falta} min até ${env.WAIT_UNTIL}…`); await sleep(falta * 60_000); }
 }
 
+// Trava contra post duplicado: confere os posts recentes no próprio Instagram.
+const primeiraLinha = (s = "") => s.split("\n")[0].trim();
+const { data: recentes = [] } = await api("GET", `${env.IG_USER_ID}/media`, { fields: "caption,permalink,timestamp", limit: "10" });
+const repetido = recentes.find((m) => primeiraLinha(m.caption) === primeiraLinha(caption));
+if (repetido) {
+  console.log(`Post ${post.id} já está no Instagram (${repetido.permalink}). Nada a fazer.`);
+  if (!log.some((l) => l.id === post.id)) {
+    log.push({ id: post.id, data: post.data, permalink: repetido.permalink, publicado_em: repetido.timestamp });
+    writeFileSync(logPath, JSON.stringify(log, null, 2) + "\n");
+  }
+  process.exit(0);
+}
+
 const { id: containerId } = await api("POST", `${env.IG_USER_ID}/media`, { image_url: imageUrl, caption });
 for (let i = 0; i < 20; i++) {
   const { status_code } = await api("GET", containerId, { fields: "status_code" });
