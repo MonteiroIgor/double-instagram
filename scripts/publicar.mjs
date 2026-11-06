@@ -53,6 +53,12 @@ const alvoId = arg("--id");
 const alvoData = arg("--data") || hoje.data;
 const post = alvoId ? cal.posts.find((p) => p.id === Number(alvoId)) : cal.posts.find((p) => p.data === alvoData);
 if (!post) { console.log(`Nenhum post programado para ${alvoData}. Nada a fazer.`); process.exit(0); }
+// O agendador do GitHub chega a atrasar horas: uma rodada de reserva que caia depois da meia-noite
+// não pode publicar o post do dia seguinte de madrugada.
+if (env.GITHUB_EVENT_NAME === "schedule" && hoje.min < 11 * 60 + 30) {
+  console.log(`Rodada agendada chegou às ${String(Math.floor(hoje.min / 60)).padStart(2, "0")}h (atrasada). Nada a fazer antes das 11h30.`);
+  process.exit(0);
+}
 
 const logPath = join(ROOT, "saida/publicados.json");
 const log = existsSync(logPath) ? JSON.parse(readFileSync(logPath, "utf8")) : [];
