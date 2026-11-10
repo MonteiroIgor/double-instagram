@@ -1,6 +1,6 @@
 {
   "perfil": "@ddoublesoftware",
-  "horario_publicacao": "12:00 America/Sao_Paulo",
+  "horario_publicacao": "12:00 America/Sao_Paulo (feed: terça e quinta; stories: todo dia)",
   "posts": [
     {
       "id": 1, "data": "2026-11-05", "servico": "double", "modelo": "cta", "fundo": "gelo",
@@ -49,27 +49,27 @@
       "legenda": "Quantos desses você marcou? 👀\n\nQualidade de software não é burocracia nem \"etapa final\". É o que permite entregar rápido sem quebrar o que já funciona.\n\nNa Double a gente monta a esteira de qualidade do seu produto: testes automatizados, revisão de código, testes de carga e monitoramento depois de cada entrega.\n\n✅ Menos retrabalho, mais confiança para evoluir.\n\nComenta aqui quantos sinais você marcou de 0 a 4 👇"
     },
     {
-      "id": 6, "data": "2026-11-10", "servico": "saas", "modelo": "hook", "fundo": "branco",
+      "id": 6, "data": "2026-11-12", "servico": "saas", "modelo": "hook", "fundo": "branco",
       "kicker": "Para quem tem método",
       "titulo": "Seu processo funciona tão bem que *outros pagariam* por ele?",
       "subtitulo": "A gente transforma know-how em SaaS: produto online, com assinatura recorrente, pronto para escalar.",
       "legenda": "Tem empresa que resolveu um problema tão bem internamente que, sem perceber, criou um produto. 💡\n\nAquele controle que você montou, aquele fluxo que só a sua equipe tem, aquele método que os clientes sempre elogiam… pode virar um SaaS.\n\nSaaS = software vendido como assinatura. Em vez de uma venda única, receita recorrente todo mês.\n\nNa Double a gente ajuda da validação da ideia ao produto no ar: MVP, login, planos, pagamentos e evolução contínua.\n\n💬 Tem uma ideia assim? Conta pra gente no direct."
     },
     {
-      "id": 7, "data": "2026-11-11", "servico": "consultoria", "modelo": "dica", "fundo": "gelo",
+      "id": 7, "data": "2026-11-17", "servico": "consultoria", "modelo": "dica", "fundo": "gelo",
       "titulo": "Antes de comprar mais uma ferramenta, *mapeie o processo*. Tecnologia acelera o que já existe, inclusive a bagunça.",
       "assinatura": "Dica de consultoria · Double",
       "legenda": "Já assinou uma ferramenta incrível que ninguém usou depois de um mês? 🫠\n\nNa maioria das vezes o problema não é a ferramenta. É que o processo por trás dela não estava claro.\n\nAntes de investir em tecnologia, vale responder:\n1️⃣ Qual tarefa queremos melhorar?\n2️⃣ Quem faz, quando e com quais informações?\n3️⃣ Onde estão os gargalos?\n4️⃣ Como vamos medir se melhorou?\n\nNa consultoria de TI da Double, a gente começa por aí. Só depois escolhe (ou constrói) a ferramenta certa.\n\n📌 Salva antes da próxima assinatura."
     },
     {
-      "id": 8, "data": "2026-11-12", "servico": "ia", "modelo": "numero", "fundo": "branco",
+      "id": 8, "data": "2026-11-19", "servico": "ia", "modelo": "numero", "fundo": "branco",
       "numero": "24/7",
       "titulo": "Atendimento ativo, *mesmo fora do expediente*.",
       "subtitulo": "Um assistente com IA treinado com as informações da sua empresa responde a qualquer hora e chama um humano quando precisa.",
       "legenda": "Seu cliente não manda mensagem só em horário comercial. 🕐\n\nCom um assistente de IA no WhatsApp, Instagram ou site, ele recebe resposta na hora: preços, horários, serviços, status de pedido, agendamento.\n\nE o mais importante: a IA é treinada com as informações da SUA empresa, no tom da sua marca. Quando o assunto exige alguém do time, ela transfere com o histórico da conversa.\n\n🤖 Quer ver como ficaria no seu negócio? Toca no link da bio e fala com a gente."
     },
     {
-      "id": 9, "data": "2026-11-13", "servico": "marca", "modelo": "lista", "fundo": "gelo",
+      "id": 9, "data": "2026-11-24", "servico": "marca", "modelo": "lista", "fundo": "gelo",
       "titulo": "O que todo *site profissional* precisa ter",
       "itens": [
         { "t": "Carregar rápido no celular", "d": "É de lá que vem a maior parte das visitas." },
@@ -81,13 +81,13 @@
       "legenda": "Site bonito é ótimo. Site que traz cliente é melhor ainda. 🚀\n\nAntes de pensar em animações e efeitos, confere se o básico está lá:\n📱 Abre rápido no celular?\n🎯 Quem entra entende o que você faz?\n💬 O contato está fácil?\n🔎 Aparece quando alguém procura seu serviço?\n\nNa Double, todo site já nasce com esses quatro pontos resolvidos e com a identidade visual da sua marca.\n\n🔁 Manda pra aquele amigo que está \"pensando em fazer um site\" há dois anos."
     },
     {
-      "id": 10, "data": "2026-11-14", "servico": "software", "modelo": "hook", "fundo": "branco",
+      "id": 10, "data": "2026-11-26", "servico": "software", "modelo": "hook", "fundo": "branco",
       "titulo": "Não adapte sua empresa ao sistema.\n*Adapte o sistema* à sua empresa.",
       "subtitulo": "Software sob demanda, construído em cima do seu processo, do jeito que sua equipe já trabalha.",
       "legenda": "Sistema pronto é ótimo para processos padrão. Mas e quando o seu diferencial está justamente no jeito que você faz as coisas? 🤔\n\nForçar a equipe a se encaixar num software genérico gera gambiarra, planilha paralela e retrabalho.\n\nCom software sob demanda, cada tela, regra e relatório é pensado para a sua operação, e evolui junto com o negócio.\n\n🛠️ Na Double a gente começa com uma imersão no seu processo e um protótipo navegável antes de escrever a primeira linha de código.\n\n👉 Link na bio para conversar."
     },
     {
-      "id": 11, "data": "2026-11-15", "servico": "saas", "modelo": "lista", "fundo": "gelo",
+      "id": 11, "data": "2026-12-01", "servico": "saas", "modelo": "lista", "fundo": "gelo",
       "titulo": "Do zero ao *SaaS no ar*: como fazemos",
       "itens": [
         { "t": "Descoberta", "d": "Validamos o problema, o público e o modelo de cobrança." },
@@ -99,21 +99,21 @@
       "legenda": "Todo SaaS de sucesso começou pequeno. 🌱\n\nO erro mais comum é tentar lançar tudo de uma vez: meses de desenvolvimento antes de o primeiro cliente pagar.\n\nNosso caminho é outro:\n🔍 Descoberta: o problema existe? Quem paga por ele?\n🧪 MVP: o mínimo que já entrega valor\n🚀 Lançamento: cobrança recorrente e onboarding simples\n📈 Evolução: dados reais decidindo o que construir\n\nAssim você valida rápido e investe com segurança.\n\n💬 Qual etapa é o seu maior desafio hoje? Conta aqui 👇"
     },
     {
-      "id": 12, "data": "2026-11-16", "servico": "qualidade", "modelo": "comparativo", "fundo": "branco",
+      "id": 12, "data": "2026-12-03", "servico": "qualidade", "modelo": "comparativo", "fundo": "branco",
       "titulo": "Deploy *sem medo*",
       "antes": { "titulo": "Sem QA", "itens": ["Testes manuais na véspera", "Correção que quebra outra coisa", "Cliente vira testador"] },
       "depois": { "titulo": "Com QA Double", "itens": ["Testes automáticos a cada mudança", "Regressão coberta", "Entregas previsíveis"] },
       "legenda": "\"Pode subir, testei aqui e funcionou.\" 😅\n\nEssa frase já derrubou muito sistema em produção.\n\nCom uma esteira de qualidade, cada alteração passa automaticamente por testes antes de chegar ao cliente. Se algo quebrar, quem descobre é o pipeline, não o usuário.\n\nNa Double a gente implanta testes automatizados, revisão de código e monitoramento no seu projeto, novo ou legado.\n\n✅ Publicar uma nova versão deveria ser rotina, não evento de risco.\n\n📩 Fala com a gente pelo link da bio."
     },
     {
-      "id": 13, "data": "2026-11-17", "servico": "ia", "modelo": "hook", "fundo": "gelo",
+      "id": 13, "data": "2026-12-08", "servico": "ia", "modelo": "hook", "fundo": "gelo",
       "kicker": "Faça as contas",
       "titulo": "Quantas horas sua equipe gasta *copiando e colando*?",
       "subtitulo": "Automações com IA conectam seus sistemas e assumem as tarefas repetitivas. Sua equipe fica com o que importa.",
       "legenda": "Copiar dado do e-mail para a planilha. Da planilha para o sistema. Do sistema para o relatório. Todo. Santo. Dia. 🔁\n\nSoma os minutos de cada pessoa da equipe por semana. Assusta, né?\n\nCom automações e integrações inteligentes, essas tarefas rodam sozinhas: a IA lê, classifica, preenche, avisa e gera o relatório.\n\nNão é sobre substituir pessoas. É sobre tirar delas o trabalho que ninguém gosta de fazer.\n\n🤖 Comenta \"AUTOMATIZA\" e a gente te mostra por onde começar."
     },
     {
-      "id": 14, "data": "2026-11-18", "servico": "consultoria", "modelo": "lista", "fundo": "branco",
+      "id": 14, "data": "2026-12-10", "servico": "consultoria", "modelo": "lista", "fundo": "branco",
       "titulo": "Consultoria de TI: *por onde começamos*",
       "itens": [
         { "t": "Diagnóstico", "d": "Sistemas, processos, custos e segurança." },
@@ -125,21 +125,21 @@
       "legenda": "TI não precisa ser uma caixa-preta. 🧭\n\nNossa consultoria começa entendendo o seu negócio, não vendendo ferramenta. A partir do diagnóstico, você recebe um plano claro: o que resolver primeiro, quanto custa e qual o retorno esperado.\n\nIdeal para empresas que:\n▪️ cresceram e a TI ficou para trás\n▪️ pagam por várias ferramentas que não conversam\n▪️ querem usar IA, mas não sabem por onde começar\n\n👉 Agende uma conversa pelo link da bio."
     },
     {
-      "id": 15, "data": "2026-11-19", "servico": "marca", "modelo": "comparativo", "fundo": "gelo",
+      "id": 15, "data": "2026-12-15", "servico": "marca", "modelo": "comparativo", "fundo": "gelo",
       "titulo": "Link na bio *genérico* vs. *página da sua marca*",
       "antes": { "titulo": "Genérico", "itens": ["Visual igual ao de todo mundo", "Sem identidade da marca", "Links soltos, sem contexto"] },
       "depois": { "titulo": "Página Double", "itens": ["Cores, logo e fotos da marca", "Botões pensados para converter", "Integrada ao seu site"] },
       "legenda": "Sua marca investe em post bonito, foto profissional, identidade visual… e na hora do clique entrega uma página genérica? 🤷\n\nA página de link na bio é a ponte entre o Instagram e a venda. Ela precisa ter a mesma cara do seu perfil e guiar o cliente para a ação certa.\n\nNa Double a gente cria a sua página de bio personalizada e, se quiser, o site completo junto: tudo conectado e com a sua identidade.\n\n👉 Toca no link da bio e vê um exemplo na prática."
     },
     {
-      "id": 16, "data": "2026-11-20", "servico": "software", "modelo": "numero", "fundo": "branco",
+      "id": 16, "data": "2026-12-17", "servico": "software", "modelo": "numero", "fundo": "branco",
       "numero": "1",
       "titulo": "sistema *no lugar de várias* ferramentas soltas.",
       "subtitulo": "Cadastro, financeiro, estoque e relatórios em uma plataforma pensada para o seu negócio.",
       "legenda": "Uma ferramenta para clientes, outra para financeiro, outra para estoque, uma planilha para juntar tudo… e ninguém confia no número final. 🧩\n\nQuando os dados vivem em lugares diferentes, a gestão vira caça ao tesouro.\n\nUm sistema sob medida integra tudo em um só lugar: a informação é cadastrada uma vez e aparece onde precisa. Relatório em tempo real, sem retrabalho.\n\n🛠️ Quer entender se faz sentido para a sua empresa? Chama no direct."
     },
     {
-      "id": 17, "data": "2026-11-21", "servico": "ia", "modelo": "lista", "fundo": "gelo",
+      "id": 17, "data": "2026-12-22", "servico": "ia", "modelo": "lista", "fundo": "gelo",
       "titulo": "Integrações que *economizam o seu dia*",
       "itens": [
         { "t": "WhatsApp ↔ CRM", "d": "Toda conversa vira contato organizado." },
@@ -151,40 +151,40 @@
       "legenda": "Seus sistemas conversam entre si ou é você quem faz a ponte? 🔌\n\nIntegração é aquele investimento que some da vista e aparece no relógio: horas devolvidas toda semana.\n\nAlguns exemplos que a gente implementa:\n📲 WhatsApp alimentando o CRM\n📝 Formulários que viram tarefas e alertas\n💰 Vendas que geram cobrança automaticamente\n📊 Relatórios que chegam prontos\n\nE com IA no meio do caminho, dá pra classificar, resumir e decidir o próximo passo sozinho.\n\n📌 Salva e marca quem precisa ver isso."
     },
     {
-      "id": 18, "data": "2026-11-22", "servico": "saas", "modelo": "dica", "fundo": "branco",
+      "id": 18, "data": "2026-12-24", "servico": "saas", "modelo": "dica", "fundo": "branco",
       "titulo": "Um bom SaaS não nasce com 50 funcionalidades. Nasce resolvendo *um problema muito bem*.",
       "assinatura": "Dica de produto · Double",
       "legenda": "A lista de funcionalidades do seu SaaS está enorme? Respira. 🧘\n\nOs produtos que dão certo costumam começar focados: um público claro, uma dor específica e uma solução que faz isso melhor que qualquer alternativa.\n\nO resto vem depois, guiado pelo uso real dos clientes, e não por suposições.\n\nNa Double a gente ajuda a recortar o MVP certo para você lançar mais rápido e gastar menos.\n\n💬 Qual é o problema que o seu produto resolve? Escreve em uma frase aqui nos comentários 👇"
     },
     {
-      "id": 19, "data": "2026-11-23", "servico": "qualidade", "modelo": "hook", "fundo": "gelo",
+      "id": 19, "data": "2026-12-29", "servico": "qualidade", "modelo": "hook", "fundo": "gelo",
       "titulo": "Qualidade\nnão é *luxo*.\nÉ o que faz o cliente *voltar*.",
       "subtitulo": "Testes, revisão de código e monitoramento para o seu software funcionar no dia que mais importa.",
       "legenda": "O cliente não vê seu código. Ele vê se o botão funciona, se a página carrega e se o pagamento passa. 💳\n\nCada falha em produção custa venda, suporte e reputação. Cada entrega estável constrói confiança.\n\nQualidade de software é isso: garantir que o que funciona hoje continue funcionando amanhã, mesmo depois de dez novas versões.\n\n✅ Na Double, qualidade faz parte de todo projeto e também pode ser contratada para o software que você já tem.\n\n👉 Link na bio."
     },
     {
-      "id": 20, "data": "2026-11-24", "servico": "consultoria", "modelo": "comparativo", "fundo": "branco",
+      "id": 20, "data": "2026-12-31", "servico": "consultoria", "modelo": "comparativo", "fundo": "branco",
       "titulo": "TI como *custo* vs. TI como *estratégia*",
       "antes": { "titulo": "Custo", "itens": ["Só lembra da TI quando quebra", "Ferramentas compradas sem plano", "Dados que ninguém usa"] },
       "depois": { "titulo": "Estratégia", "itens": ["Infraestrutura planejada", "Ferramentas alinhadas aos objetivos", "Decisões baseadas em dados"] },
       "legenda": "Para muitas empresas, TI é só aquela conta que chega todo mês. 💸\n\nMas quando ela é bem planejada, vira vantagem competitiva: processos mais rápidos, dados confiáveis e espaço para inovar com IA e automação.\n\nA virada de chave não exige gastar mais. Exige gastar melhor, com prioridades claras.\n\n🧭 É exatamente isso que a consultoria de TI da Double entrega.\n\nDe que lado a sua empresa está hoje? Responde aqui: CUSTO ou ESTRATÉGIA 👇"
     },
     {
-      "id": 21, "data": "2026-11-25", "servico": "marca", "modelo": "hook", "fundo": "gelo",
+      "id": 21, "data": "2027-01-05", "servico": "marca", "modelo": "hook", "fundo": "gelo",
       "kicker": "Primeira impressão",
       "titulo": "Seu cliente decide em *segundos* se confia na sua marca.",
       "subtitulo": "Site e página de bio com visual profissional transmitem credibilidade antes mesmo da primeira conversa.",
       "legenda": "Antes de te chamar no WhatsApp, o cliente pesquisa. Abre o perfil, toca no link, entra no site. 🔎\n\nEm poucos segundos ele responde, mesmo sem perceber: \"essa empresa é séria?\"\n\nVisual desatualizado, página lenta ou informação confusa fazem ele voltar pro Google e escolher outro.\n\nO upgrade de marca digital da Double resolve isso: site e página de bio modernos, rápidos e com a sua identidade, feitos para gerar confiança e contato.\n\n👉 Link na bio para pedir o seu."
     },
     {
-      "id": 22, "data": "2026-11-26", "servico": "ia", "modelo": "comparativo", "fundo": "branco",
+      "id": 22, "data": "2027-01-07", "servico": "ia", "modelo": "comparativo", "fundo": "branco",
       "titulo": "Rotina manual vs. *rotina automatizada*",
       "antes": { "titulo": "Manual", "itens": ["Conferir e-mails um por um", "Atualizar planilha à mão", "Lembrar de cobrar cliente"] },
       "depois": { "titulo": "Com IA", "itens": ["IA classifica e responde", "Dados sincronizados sozinhos", "Cobranças e lembretes automáticos"] },
       "legenda": "Quanto da sua semana é gasto com tarefas que uma máquina faria melhor? ⏱️\n\nRotinas automatizadas com IA cuidam do operacional: ler e organizar e-mails, atualizar sistemas, enviar lembretes, gerar resumos e relatórios.\n\nVocê define as regras uma vez. A automação executa todos os dias, sem esquecer e sem cansar.\n\n🤖 Na Double a gente mapeia suas rotinas e automatiza as que dão mais retorno primeiro.\n\n💬 Qual tarefa você automatizaria amanhã? Conta aqui 👇"
     },
     {
-      "id": 23, "data": "2026-11-27", "servico": "software", "modelo": "lista", "fundo": "gelo",
+      "id": 23, "data": "2027-01-12", "servico": "software", "modelo": "lista", "fundo": "gelo",
       "titulo": "Como nasce um *software sob medida* na Double",
       "itens": [
         { "t": "Imersão no seu processo", "d": "Entendemos como sua equipe trabalha de verdade." },
@@ -196,14 +196,14 @@
       "legenda": "Medo de contratar um sistema e receber algo que ninguém pediu? A gente também teria. 😅\n\nPor isso nosso processo é transparente do início ao fim:\n🔍 Imersão para entender o problema real\n🖥️ Protótipo clicável para validar antes de desenvolver\n🔁 Entregas curtas, com você acompanhando cada etapa\n🛟 Suporte e evolução depois do lançamento\n\nSem surpresa no final, sem projeto que some por meses.\n\n👉 Quer tirar uma ideia do papel? Link na bio."
     },
     {
-      "id": 24, "data": "2026-11-28", "servico": "saas", "modelo": "numero", "fundo": "branco",
+      "id": 24, "data": "2027-01-14", "servico": "saas", "modelo": "numero", "fundo": "branco",
       "numero": "12x",
       "titulo": "a mesma venda, *todo mês* do ano.",
       "subtitulo": "No modelo SaaS cada cliente gera receita recorrente. Planejamos produto, planos e cobrança para isso.",
       "legenda": "Vender uma vez é bom. Vender todo mês para o mesmo cliente é outro jogo. 📈\n\nEssa é a lógica do SaaS: em vez de projetos pontuais, assinaturas que se renovam e tornam o faturamento previsível.\n\nMas receita recorrente exige produto que entrega valor contínuo, onboarding simples e uma cobrança que funciona sozinha.\n\n☁️ Na Double a gente constrói o SaaS completo: plataforma, planos, pagamentos, painel administrativo e métricas.\n\n💬 Chama no direct e conta sua ideia."
     },
     {
-      "id": 25, "data": "2026-11-29", "servico": "qualidade", "modelo": "lista", "fundo": "gelo",
+      "id": 25, "data": "2027-01-19", "servico": "qualidade", "modelo": "lista", "fundo": "gelo",
       "titulo": "O que entra na nossa *esteira de qualidade*",
       "itens": [
         { "t": "Testes automatizados", "d": "Unitários, de integração e ponta a ponta." },
@@ -215,19 +215,19 @@
       "legenda": "Qualidade não acontece por acaso. Ela é construída em camadas. 🧱\n\n✅ Testes automatizados pegam regressões em minutos\n👀 Revisão de código evita problemas antes de existirem\n⚡ Testes de performance garantem que a Black Friday não derrube o sistema\n📡 Monitoramento avisa o time antes do cliente reclamar\n\nTudo isso pode ser aplicado a um projeto novo ou ao software que sua empresa já usa.\n\n📌 Salva como checklist para o seu próximo projeto."
     },
     {
-      "id": 26, "data": "2026-11-30", "servico": "consultoria", "modelo": "hook", "fundo": "branco",
+      "id": 26, "data": "2027-01-21", "servico": "consultoria", "modelo": "hook", "fundo": "branco",
       "titulo": "Sua empresa cresceu.\n*E a sua TI?*",
       "subtitulo": "Avaliamos sistemas, segurança e processos e entregamos um plano claro do que fazer primeiro.",
       "legenda": "Mais clientes, mais equipe, mais dados… e a mesma estrutura de tecnologia de quando tudo começou. 😬\n\nOs sinais aparecem aos poucos: sistema lento, senha compartilhada no grupo, backup que ninguém testou, ferramentas que não conversam.\n\nA consultoria de TI da Double faz um raio-x completo e entrega um plano priorizado: o que é urgente, o que pode esperar e onde a tecnologia pode acelerar o crescimento.\n\n🧭 Fala com a gente pelo link da bio."
     },
     {
-      "id": 27, "data": "2026-12-01", "servico": "ia", "modelo": "dica", "fundo": "gelo",
+      "id": 27, "data": "2027-01-26", "servico": "ia", "modelo": "dica", "fundo": "gelo",
       "titulo": "Comece pela tarefa mais *chata e repetitiva* do seu time. É lá que a IA se paga mais rápido.",
       "assinatura": "Dica de IA · Double",
       "legenda": "Quer usar IA na empresa e não sabe por onde começar? 🤖\n\nEsquece o projeto gigante. Pergunta pro seu time: \"qual tarefa você faria feliz em nunca mais fazer?\"\n\nGeralmente a resposta é algo repetitivo, com regras claras e muito volume: responder dúvidas, organizar documentos, preencher sistemas, gerar relatórios.\n\nÉ ali que a automação com IA traz retorno rápido e ganha a confiança da equipe para os próximos passos.\n\n📌 Salva e leva essa pergunta para a próxima reunião."
     },
     {
-      "id": 28, "data": "2026-12-02", "servico": "marca", "modelo": "lista", "fundo": "branco",
+      "id": 28, "data": "2027-01-28", "servico": "marca", "modelo": "lista", "fundo": "branco",
       "titulo": "O que vai na sua *página de bio* Double",
       "itens": [
         { "t": "WhatsApp com mensagem pronta", "d": "O cliente toca e já começa a conversa." },
@@ -239,14 +239,14 @@
       "legenda": "Um link. Tudo o que seu cliente precisa. ✨\n\nA página de bio da Double é feita sob medida para o seu negócio: cores, logo, fotos e textos da sua marca, com os botões na ordem certa para levar o cliente até a ação.\n\nFunciona para profissionais liberais, clínicas, lojas, criadores e empresas de serviço. E pode vir junto com um site completo no mesmo estilo.\n\n👉 Peça a sua pelo link da bio ou comenta \"QUERO\" que a gente te chama."
     },
     {
-      "id": 29, "data": "2026-12-03", "servico": "software", "modelo": "hook", "fundo": "gelo",
+      "id": 29, "data": "2027-02-02", "servico": "software", "modelo": "hook", "fundo": "gelo",
       "kicker": "Ideia na gaveta?",
       "titulo": "Tem um sistema que você *sempre quis* ter e ninguém fez?",
       "subtitulo": "Conta pra gente. Em uma conversa a gente te mostra o caminho, o prazo e o investimento.",
       "legenda": "Todo empresário tem aquela ideia: \"se eu tivesse um sistema que fizesse X, minha vida seria outra\". 💭\n\nÀs vezes é um app para a equipe de campo. Às vezes um portal para clientes. Às vezes um painel que junta tudo.\n\nA boa notícia: dá pra começar pequeno, com um protótipo, e validar antes de investir pesado.\n\n🛠️ Na Double a gente transforma essa ideia em software, com processo transparente e entregas que você acompanha.\n\n💬 Qual é a sua ideia? Manda no direct."
     },
     {
-      "id": 30, "data": "2026-12-04", "servico": "double", "modelo": "cta", "fundo": "branco",
+      "id": 30, "data": "2027-02-04", "servico": "double", "modelo": "cta", "fundo": "branco",
       "titulo": "Vamos construir *o próximo passo* da sua empresa?",
       "subtitulo": "Do site à inteligência artificial, a Double cuida da tecnologia para você cuidar do negócio.",
       "chips": ["Site + link na bio", "IA & automação", "Software sob medida", "SaaS", "Qualidade de software", "Consultoria de TI"],
