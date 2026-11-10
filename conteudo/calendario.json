@@ -49,6 +49,15 @@
       "legenda": "Quantos desses você marcou? 👀\n\nQualidade de software não é burocracia nem \"etapa final\". É o que permite entregar rápido sem quebrar o que já funciona.\n\nNa Double a gente monta a esteira de qualidade do seu produto: testes automatizados, revisão de código, testes de carga e monitoramento depois de cada entrega.\n\n✅ Menos retrabalho, mais confiança para evoluir.\n\nComenta aqui quantos sinais você marcou de 0 a 4 👇"
     },
     {
+      "id": 31,
+      "data": "2026-11-10",
+      "tipo": "reel",
+      "servico": "marca",
+      "video": "2026-11-10_31-marca.mp4",
+      "titulo": "Seu cliente clicou no link da bio.",
+      "legenda": "Seu cliente clicou no link da bio… e achou cinco botões e nenhuma resposta. 🤷\n\nLink na bio não é lista de atalhos. É a primeira conversa com quem já está interessado.\n\nNa página que a Double cria, o cliente encontra:\n🎨 Identidade própria: cores, fontes e logo do seu negócio\n💰 Serviços e preços à vista, antes de qualquer conversa\n💬 Um toque e o WhatsApp abre com o serviço já escolhido na mensagem\n\nMenos \"quanto custa?\" no direct. Mais agendamento.\n\n👉 Quer uma página assim para o seu negócio? Chama no direct ou toca no link da bio.\n\n(Exemplo demonstrativo com negócio fictício.)"
+    },
+    {
       "id": 6, "data": "2026-11-12", "servico": "saas", "modelo": "hook", "fundo": "branco",
       "kicker": "Para quem tem método",
       "titulo": "Seu processo funciona tão bem que *outros pagariam* por ele?",

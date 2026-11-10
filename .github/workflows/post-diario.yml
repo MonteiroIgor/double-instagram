@@ -1,4 +1,5 @@
 name: Post diário Instagram (12h Brasília)
+# Feed: terça e quinta (conteudo/calendario.json). Stories: todo dia (conteudo/stories.json).
 
 on:
   schedule:
@@ -46,7 +47,7 @@ jobs:
           IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
           IG_USERNAME: ${{ vars.IG_USERNAME || 'ddoublesoftware' }}
           IG_API_VERSION: ${{ vars.IG_API_VERSION || 'v24.0' }}
-          IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/saida/jpg
+          MEDIA_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/saida
           WAIT_UNTIL: "12:00"
           DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
         run: |
@@ -56,6 +57,7 @@ jobs:
             node scripts/publicar.mjs
           fi
       - name: Registrar publicação
+        if: always()  # registra o que saiu mesmo se outra parte falhar
         run: |
           if [ -n "$(git status --porcelain saida/publicados.json)" ]; then
             git config user.name "double-bot"

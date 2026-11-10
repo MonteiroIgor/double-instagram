@@ -13,7 +13,8 @@ const dia = (d) => new Date(d + "T12:00:00-03:00").toLocaleDateString("pt-BR", {
 
 const cards = cal.posts.map((p) => {
   const nome = `${p.data}_${String(p.id).padStart(2, "0")}-${p.servico}`;
-  return `<article><img src="png/${nome}.png" loading="lazy" alt="">
+  const midia = p.tipo === "reel" ? `<video src="video/${p.video}" controls muted playsinline preload="metadata"></video>` : `<img src="png/${nome}.png" loading="lazy" alt="">`;
+  return `<article>${midia}
   <div class="meta"><b>#${p.id} · ${dia(p.data)} · 12h</b><span>${esc((SERVICOS[p.servico] || SERVICOS.double).tag)}</span>${publicados.has(p.id) ? '<em>publicado</em>' : ""}</div>
   <details><summary>Legenda</summary><pre>${esc(legendaCompleta(p))}</pre></details></article>`;
 }).join("\n");
@@ -25,12 +26,12 @@ body{margin:0;background:#F4F8FC;font:15px/1.5 Inter,system-ui,sans-serif;color:
 h1{font-size:22px;margin:28px 24px 4px}p.s{margin:0 24px 20px;color:#6B7A8C}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;padding:0 24px 40px}
 article{background:#fff;border:1px solid #D3E6F5;border-radius:14px;overflow:hidden}
-img{width:100%;display:block;aspect-ratio:4/5}
+img,video{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;background:#000}
 .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px 14px 4px}
 .meta span{font-size:12px;color:#2F8FC9;background:#EAF4FB;border-radius:99px;padding:2px 10px}
 .meta em{font-size:12px;font-style:normal;color:#1f7a55;background:#eef7f2;border-radius:99px;padding:2px 10px}
 details{padding:4px 14px 14px}summary{cursor:pointer;color:#6B7A8C}
 pre{white-space:pre-wrap;font:13px/1.5 Inter,system-ui,sans-serif;color:#3E4C5E}
 </style></head><body><h1>Calendário de posts · ${esc(cal.perfil)}</h1>
-<p class="s">${cal.posts.length} posts · publicação diária às 12h (Brasília)</p><div class="grid">${cards}</div></body></html>`);
+<p class="s">${cal.posts.length} posts no feed (terça e quinta, 12h) · stories todo dia às 12h</p><div class="grid">${cards}</div></body></html>`);
 console.log("✓ saida/galeria.html");

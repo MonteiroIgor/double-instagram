@@ -17,7 +17,7 @@ if (!CHROME) throw new Error("Chrome não encontrado. Defina CHROME_BIN.");
 
 const cal = JSON.parse(readFileSync(join(ROOT, "conteudo/calendario.json"), "utf8"));
 const filtro = process.argv.slice(2).map(Number);
-const posts = filtro.length ? cal.posts.filter((p) => filtro.includes(p.id)) : cal.posts;
+const posts = (filtro.length ? cal.posts.filter((p) => filtro.includes(p.id)) : cal.posts).filter((p) => p.tipo !== "reel");
 
 for (const d of ["html", "png", "jpg", "legendas"]) mkdirSync(join(OUT, d), { recursive: true });
 const logo = pathToFileURL(join(ROOT, "assets/logo.png")).href;
