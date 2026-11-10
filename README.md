@@ -1,13 +1,17 @@
-# Posts diários · Double (@ddoublesoftware)
+# Posts e stories · Double (@ddoublesoftware)
 
-30 posts prontos (05/11 a 04/12/2026), um por dia às **12h de Brasília**, com arte em fundo branco/azul-gelo e legenda.
+Rotina (12h de Brasília):
+- **Feed:** terça e quinta (imagem ou Reel), em `conteudo/calendario.json`.
+- **Stories:** todo dia, em `conteudo/stories.json` (arte vertical 1080x1920 feita a partir da arte de um post).
 
 ```
 conteudo/calendario.json   ← textos de todos os posts (edite aqui)
+conteudo/stories.json      ← um story por dia (data + post de referência + selo)
 scripts/render.mjs         ← gera as artes (PNG + JPG) e legendas
+scripts/stories.mjs        ← gera as imagens dos stories (saida/stories)
 scripts/galeria.mjs        ← gera saida/galeria.html para revisar tudo
-scripts/publicar.mjs       ← publica o post do dia via API oficial do Instagram
-.github/workflows/post-diario.yml ← roda o publicar todo dia às 12h
+scripts/publicar.mjs       ← publica o feed (se houver) e o story do dia via API oficial
+.github/workflows/post-diario.yml ← roda o publicar todo dia às 12h (disparado pelo cron-job.org às 11:57)
 .claude/skills/double-instagram/  ← skill do Claude para criar os próximos posts
 ```
 
@@ -50,3 +54,9 @@ Observações
 - O GitHub inicia o agendamento às 11:50 e o script aguarda até 12:00. Como o agendador do GitHub às vezes atrasa ou pula execuções, há rodadas de reserva às 12:17, 12:43, 13:23, 14:37 e 17:07: se o post do dia já saiu, elas não fazem nada.
 - Se um dia não tiver post no calendário, nada é publicado.
 - Versão da API: padrão `v24.0`; para trocar, crie a variável do repositório `IG_API_VERSION`.
+
+## Reels
+
+Coloque o vídeo (MP4 H.264, vertical 1080x1920, até 90 s) em `saida/video/` e adicione ao `calendario.json` um item com
+`"tipo": "reel"`, `"video": "<arquivo>.mp4"`, `servico`, `titulo` e `legenda`. O vídeo é enviado ao Instagram pelo jsDelivr
+(que serve `video/mp4`), fixado no commit da execução.

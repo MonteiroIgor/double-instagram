@@ -1,11 +1,13 @@
 ---
 name: double-instagram
-description: Cria e programa posts diários do Instagram da Double (@ddoublesoftware) com arte no padrão da marca (fundo branco/azul-gelo) e legenda chamativa. Use para "gerar próximos posts", "criar post sobre X", "trocar o post de amanhã", "ver calendário" ou "publicar agora".
+description: Cria e programa posts do feed (terça e quinta), Reels e stories diários do Instagram da Double (@ddoublesoftware) com arte no padrão da marca (fundo branco/azul-gelo) e legenda chamativa. Use para "gerar próximos posts", "criar post sobre X", "trocar o post de amanhã", "ver calendário" ou "publicar agora".
 ---
 
-# Posts diários da Double
+# Posts e stories da Double
 
-Projeto: a pasta onde está este skill (`double-instagram/`). Tudo gira em torno de `conteudo/calendario.json`.
+Projeto: a pasta onde está este skill (`double-instagram/`).
+- Feed: `conteudo/calendario.json`, só às **terças e quintas** às 12h. Item com `"tipo": "reel"` + `"video"` publica um Reel (vídeo em `saida/video/`).
+- Stories: `conteudo/stories.json`, **um por dia** às 12h: `{data, ref, selo}`; `ref` é o id do post cuja arte vira o story. Nos dias de feed, use o post do dia com selo "Hoje no feed"; nos outros, "Dica Double". Renderize com `node scripts/stories.mjs <datas>`.
 
 ## Marca
 - Paleta clara: fundo `branco` ou `gelo` (alternar dia a dia). Azul-marinho `#1E3A5F` só em títulos e botões; azul `#2F8FC9` só para destaques (`*palavra*`). Nunca fundo azul forte.
@@ -25,9 +27,9 @@ Legenda: gancho na 1ª linha, 3 a 6 parágrafos curtos, emojis com moderação, 
 
 ## Gerar os próximos posts
 1. Leia `conteudo/calendario.json`, veja o último `id` e a última `data`.
-2. Crie N posts novos (padrão 30) a partir do dia seguinte, girando os 6 serviços e os modelos, sem repetir títulos/ganchos já usados. Use temas da época (datas comemorativas, fim de ano, Black Friday) quando couber.
+2. Crie N posts novos (padrão 16, ou seja 8 semanas) nas próximas terças e quintas após a última data, girando os 6 serviços e os modelos, sem repetir títulos/ganchos já usados. Use temas da época (datas comemorativas, fim de ano, Black Friday) quando couber.
 3. Acrescente ao `posts` (não altere posts já publicados, listados em `saida/publicados.json`).
-4. Rode `node scripts/render.mjs <ids novos>` e depois `node scripts/galeria.mjs`.
+4. Rode `node scripts/render.mjs <ids novos>`, acrescente os stories dos dias seguintes em `conteudo/stories.json`, rode `node scripts/stories.mjs <datas novas>` e depois `node scripts/galeria.mjs`.
 5. Abra 2 ou 3 PNGs novos para conferir se nenhum texto estourou o espaço; encurte o texto se precisar.
 6. Mostre a `saida/galeria.html` ao usuário e só faça commit/push quando ele aprovar (o GitHub Actions publica o que estiver no repositório).
 
