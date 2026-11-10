@@ -51,6 +51,8 @@ jobs:
           WAIT_UNTIL: "12:00"
           DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
         run: |
+          # Vídeo via jsDelivr (serve como video/mp4; o raw do GitHub serve como octet-stream), fixado no commit atual.
+          export VIDEO_BASE_URL="https://cdn.jsdelivr.net/gh/${GITHUB_REPOSITORY}@$(git rev-parse HEAD)/saida"
           if [ -n "${{ inputs.data }}" ]; then
             node scripts/publicar.mjs --data "${{ inputs.data }}"
           else
