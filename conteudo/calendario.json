@@ -65,17 +65,22 @@
       "legenda": "Tem empresa que resolveu um problema tão bem internamente que, sem perceber, criou um produto. 💡\n\nAquele controle que você montou, aquele fluxo que só a sua equipe tem, aquele método que os clientes sempre elogiam… pode virar um SaaS.\n\nSaaS = software vendido como assinatura. Em vez de uma venda única, receita recorrente todo mês.\n\nNa Double a gente ajuda da validação da ideia ao produto no ar: MVP, login, planos, pagamentos e evolução contínua.\n\n💬 Tem uma ideia assim? Conta pra gente no direct."
     },
     {
-      "id": 7, "data": "2026-11-17", "servico": "consultoria", "modelo": "dica", "fundo": "gelo",
-      "titulo": "Antes de comprar mais uma ferramenta, *mapeie o processo*. Tecnologia acelera o que já existe, inclusive a bagunça.",
-      "assinatura": "Dica de consultoria · Double",
-      "legenda": "Já assinou uma ferramenta incrível que ninguém usou depois de um mês? 🫠\n\nNa maioria das vezes o problema não é a ferramenta. É que o processo por trás dela não estava claro.\n\nAntes de investir em tecnologia, vale responder:\n1️⃣ Qual tarefa queremos melhorar?\n2️⃣ Quem faz, quando e com quais informações?\n3️⃣ Onde estão os gargalos?\n4️⃣ Como vamos medir se melhorou?\n\nNa consultoria de TI da Double, a gente começa por aí. Só depois escolhe (ou constrói) a ferramenta certa.\n\n📌 Salva antes da próxima assinatura."
+      "id": 32,
+      "data": "2026-11-17",
+      "tipo": "reel",
+      "servico": "software",
+      "video": "2026-11-17_32-software.mp4",
+      "titulo": "O anúncio deu 120 conversas.",
+      "legenda": "O anúncio deu 120 conversas. Quantas viraram venda? 🤔\n\nSe a resposta da equipe é \"acho que umas 3\", o problema não é o anúncio. É que ninguém acompanha o caminho do contato até a venda.\n\nCom um sistema de leads feito para o seu negócio:\n📍 Cada contato chega com a origem: Instagram, Facebook, WhatsApp, site ou indicação\n👀 O time vê em que etapa cada um está\n📊 Você enxerga o que virou venda e de onde ela veio\n\nClique não paga boleto. Venda paga.\n\n👉 Quer saber quanto o seu anúncio vende de verdade? Chama no direct ou toca no link da bio.\n\n(Exemplo demonstrativo com negócio fictício.)"
     },
     {
-      "id": 8, "data": "2026-11-19", "servico": "ia", "modelo": "numero", "fundo": "branco",
-      "numero": "24/7",
-      "titulo": "Atendimento ativo, *mesmo fora do expediente*.",
-      "subtitulo": "Um assistente com IA treinado com as informações da sua empresa responde a qualquer hora e chama um humano quando precisa.",
-      "legenda": "Seu cliente não manda mensagem só em horário comercial. 🕐\n\nCom um assistente de IA no WhatsApp, Instagram ou site, ele recebe resposta na hora: preços, horários, serviços, status de pedido, agendamento.\n\nE o mais importante: a IA é treinada com as informações da SUA empresa, no tom da sua marca. Quando o assunto exige alguém do time, ela transfere com o histórico da conversa.\n\n🤖 Quer ver como ficaria no seu negócio? Toca no link da bio e fala com a gente."
+      "id": 33,
+      "data": "2026-11-19",
+      "tipo": "reel",
+      "servico": "ia",
+      "video": "2026-11-19_33-ia.mp4",
+      "titulo": "Ela pediu horário às 22:04.",
+      "legenda": "Ela pediu horário às 22:04. Quem respondeu primeiro ficou com a cliente. ⏰\n\nA mesma mensagem foi para três salões. O seu respondeu às 9h do dia seguinte… e ela já tinha marcado em outro lugar.\n\nUm assistente virtual com IA no WhatsApp resolve isso:\n💬 Responde na hora, a qualquer hora, no tom da sua marca\n📅 Oferece os horários reais da sua agenda\n✅ Confirma o agendamento sozinho\n\nSeu concorrente não é melhor que você. Ele só respondeu primeiro.\n\n🤖 Quer um assistente assim no seu WhatsApp? Chama no direct ou toca no link da bio.\n\n(Exemplo demonstrativo com negócio fictício.)"
     },
     {
       "id": 9, "data": "2026-11-24", "servico": "marca", "modelo": "lista", "fundo": "gelo",
@@ -261,6 +266,19 @@
       "chips": ["Site + link na bio", "IA & automação", "Software sob medida", "SaaS", "Qualidade de software", "Consultoria de TI"],
       "rodape": "Chame no direct",
       "legenda": "Um mês de conteúdo depois, a pergunta é simples: qual é o próximo passo da sua empresa? 🚀\n\n🌐 Uma presença digital que gera confiança\n🤖 IA e automações que devolvem horas ao seu time\n🛠️ Um sistema feito do seu jeito\n☁️ Um produto SaaS com receita recorrente\n✅ Software estável, entrega após entrega\n🧭 Um plano de TI claro para crescer\n\nSeja qual for, a Double está pronta para construir junto com você.\n\n👉 Chama no direct ou toca no link da bio. A primeira conversa é por nossa conta."
+    },
+    {
+      "id": 7, "data": "2027-02-09", "servico": "consultoria", "modelo": "dica", "fundo": "gelo",
+      "titulo": "Antes de comprar mais uma ferramenta, *mapeie o processo*. Tecnologia acelera o que já existe, inclusive a bagunça.",
+      "assinatura": "Dica de consultoria · Double",
+      "legenda": "Já assinou uma ferramenta incrível que ninguém usou depois de um mês? 🫠\n\nNa maioria das vezes o problema não é a ferramenta. É que o processo por trás dela não estava claro.\n\nAntes de investir em tecnologia, vale responder:\n1️⃣ Qual tarefa queremos melhorar?\n2️⃣ Quem faz, quando e com quais informações?\n3️⃣ Onde estão os gargalos?\n4️⃣ Como vamos medir se melhorou?\n\nNa consultoria de TI da Double, a gente começa por aí. Só depois escolhe (ou constrói) a ferramenta certa.\n\n📌 Salva antes da próxima assinatura."
+    },
+    {
+      "id": 8, "data": "2027-02-11", "servico": "ia", "modelo": "numero", "fundo": "branco",
+      "numero": "24/7",
+      "titulo": "Atendimento ativo, *mesmo fora do expediente*.",
+      "subtitulo": "Um assistente com IA treinado com as informações da sua empresa responde a qualquer hora e chama um humano quando precisa.",
+      "legenda": "Seu cliente não manda mensagem só em horário comercial. 🕐\n\nCom um assistente de IA no WhatsApp, Instagram ou site, ele recebe resposta na hora: preços, horários, serviços, status de pedido, agendamento.\n\nE o mais importante: a IA é treinada com as informações da SUA empresa, no tom da sua marca. Quando o assunto exige alguém do time, ela transfere com o histórico da conversa.\n\n🤖 Quer ver como ficaria no seu negócio? Toca no link da bio e fala com a gente."
     }
   ]
 }
