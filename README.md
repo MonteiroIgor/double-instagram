@@ -58,5 +58,6 @@ Observações
 ## Reels
 
 Coloque o vídeo (MP4 H.264, vertical 1080x1920, até 90 s) em `saida/video/` e adicione ao `calendario.json` um item com
-`"tipo": "reel"`, `"video": "<arquivo>.mp4"`, `servico`, `titulo` e `legenda`. O vídeo é enviado ao Instagram pelo jsDelivr
-(que serve `video/mp4`), fixado no commit da execução.
+`"tipo": "reel"`, `"video": "<arquivo>.mp4"`, `servico`, `titulo` e `legenda`. O vídeo é enviado ao Instagram pelo GitHub Pages
+(`https://monteiroigor.github.io/double-instagram/saida/video/…`, que serve `video/mp4`). Faça o push pelo menos alguns
+minutos antes do horário: o Pages leva 1 a 2 minutos para publicar. Mantenha o vídeo abaixo de ~15 MB.

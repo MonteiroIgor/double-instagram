@@ -7,7 +7,7 @@
 //   IG_USER_ID        ID da conta do Instagram (opcional: se faltar, é descoberto pelo token)
 //   IG_USERNAME       conta a usar na descoberta automática (padrão ddoublesoftware)
 //   MEDIA_BASE_URL    URL pública da pasta saida (ex.: https://raw.githubusercontent.com/<usuario>/<repo>/main/saida)
-//   VIDEO_BASE_URL    URL pública da pasta saida para vídeos (precisa servir video/mp4; o workflow usa o jsDelivr)
+//   VIDEO_BASE_URL    URL pública da pasta saida para vídeos (precisa servir video/mp4; o workflow usa o GitHub Pages)
 //   IMAGE_BASE_URL    (antigo) URL da pasta saida/jpg; usada se MEDIA_BASE_URL faltar
 //   IG_API_HOST       graph.facebook.com (login unificado / usuário do sistema, padrão) ou graph.instagram.com (apps antigos)
 //   IG_API_VERSION    padrão v24.0
