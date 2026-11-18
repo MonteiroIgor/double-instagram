@@ -53,7 +53,8 @@ jobs:
         run: |
           # Vídeo via GitHub Pages (serve como video/mp4; o raw do GitHub serve como octet-stream).
           # O jsDelivr falhava ao buscar vídeos de commits novos (404/503).
-          export VIDEO_BASE_URL="https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}/saida"
+          DONO=$(echo "$GITHUB_REPOSITORY_OWNER" | tr '[:upper:]' '[:lower:]')
+          export VIDEO_BASE_URL="https://${DONO}.github.io/${GITHUB_REPOSITORY#*/}/saida"
           if [ -n "${{ inputs.data }}" ]; then
             node scripts/publicar.mjs --data "${{ inputs.data }}"
           else
